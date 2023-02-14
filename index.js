@@ -2,6 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const pinRoute = require('./routes/pins');
+const userRoute = require('./routes/users');
+
 
 const app = express();
 dotenv.config();
@@ -20,7 +22,9 @@ mongoose.connect(process.env.MONGO_URL)
 })
 
 
-app.use('/api/v1/pins', pinRoute)
+app.use('/api/v1/pins', pinRoute);
+
+app.use('/api/v1/users', userRoute);
 
 
 const port = 1234
