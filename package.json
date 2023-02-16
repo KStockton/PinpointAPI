@@ -13,7 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "mapping login and routes",
   "devDependencies": {
     "bcrypt": "^5.1.0"
   }

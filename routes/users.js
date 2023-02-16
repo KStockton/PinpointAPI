@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 // register
 
 router.post('/register', async(req, res) => {
+  console.log('register')
   try {
     //generate  new password
     const salt = await bcrypt.genSalt(10)
