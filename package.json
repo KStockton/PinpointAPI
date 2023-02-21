@@ -15,6 +15,7 @@
   "license": "ISC",
   "description": "mapping login and routes",
   "devDependencies": {
-    "bcrypt": "^5.1.0"
+    "bcrypt": "^5.1.0",
+    "eslint": "^8.34.0"
   }
 }
